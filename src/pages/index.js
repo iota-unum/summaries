@@ -29,7 +29,7 @@ export default function Home(props) {
 
         {ob.content}
         </div>
-       </details> : <h2 className='font-bold' >{ob.header}</h2> )}
+       </details> : <h2 key={ob.header} className='font-bold' >{ob.header}</h2> )}
       </div>
     </>
   )
