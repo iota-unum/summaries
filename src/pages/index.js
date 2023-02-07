@@ -40,7 +40,7 @@ import fsPromises from 'fs/promises';
 import path from 'path'
 export async function getStaticProps() {
   console.log('ciao')
-  const filePath = path.join(process.cwd(), '/data/kahn-raw.json');
+  const filePath = path.join(process.cwd(), '/data/Democracy-raw.json');
   console.log(filePath)
   const jsonData = await fsPromises.readFile(filePath);
   const objectData = await JSON.parse(jsonData);
